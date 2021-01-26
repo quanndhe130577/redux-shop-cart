@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 
 import reducer from './reducer';
 import { Provider } from 'react-redux'
-
+import Notification from "./components/Notification";
 
 //store
 const store = createStore(
@@ -24,6 +24,7 @@ function App() {
     <Provider store={store}>
       <Navbar />
       <CartContainer />
+      <Notification>This is notification</Notification>
     </Provider>
   );
 }
